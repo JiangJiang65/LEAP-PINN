@@ -38,10 +38,6 @@ LEAP-PINN method is mainly based on LEAPNet model([ARXIV: LEAP nets for power gr
 
 
 
-We rewrote the LEAPNet code from TensorFlow to PyTorch. This was a team decision based on our proficiency with PyTorch, enabling us to work more efficiently.
-
-
-
 ## Environment configuration
 
 You can find all the detail about environment installation in the `1_PowerGrid_UseCase_basics.ipynb`
@@ -66,25 +62,23 @@ or
 
 **Data Preprocessing**: 
 
-It involves using functions like get_YBus_all_tensor() to obtain the YBus matrix for admittance and circuit relationships. The data includes various attributes like prod_p, load_p, etc. , and only utilizes certain properties (obs) such as gen_to_subid, load_to_subid, etc.
+- It involves using functions like get_YBus_all_tensor() to obtain the YBus matrix for admittance and circuit relationships. The data includes various attributes like prod_p, load_p, etc. , and only utilizes certain properties (obs) such as gen_to_subid, load_to_subid, etc.
 
 
 
 **Neural Network Structure**: 
 
-The LEAPNet structure is described with multiple input and output layers and specific operations. It references related works like the LIPS - learning industrial physical simulation benchmark suite.
+- The LEAPNet structure is described with multiple input and output layers and specific operations. It references related works like the LIPS - learning industrial physical simulation benchmark suite.We rewrote the LEAPNet code from TensorFlow to PyTorch. This was a team decision based on our proficiency with PyTorch, enabling us to work more efficiently.
 
 ![LEAPNet Architecture](./img/LEAPNET architecture.png)
 
 **Loss Function Design**: 
 
-The total loss is composed of 100*MSE and several other components related to the physical constraints. The design details of each component like current positivity, voltage positivity, etc., are provided, along with their calculations and effectiveness. There are also discussions on new attempts and their effects on accuracy.
-
-
+- Focusing on prediction accuracy, the team adjusted the MSE weight to 100 and incorporated P1, P2, P3, P5, and P8 into the loss function. We also recognized and addressed the initial minimal effects of P3 and P8, which were due to design issues.
 
 **Hard Linear Equality Constraints**: 
 
-The KKT-hPINN method is introduced with equations and derivations. The relationship between different constraints like P7 and global conservation is discussed, along with the challenges in combining certain constraints and the need for further improvement.
+- In dealing with hard constraints, they explored the KKT - hPINN method. We initially aimed to apply it to both P4 and P7, using P7's local conservation to achieve global conservation in P6. However, due to the high resource intensity of handling P4 with this method, they had to make compromises. We ultimately adopted the approach of directly setting the power of disconnected lines to zero for P4, which unfortunately led to conflicts with P7.
 
 
 
