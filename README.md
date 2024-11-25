@@ -86,3 +86,8 @@ The total loss is composed of 100*MSE and several other components related to th
 
 The KKT-hPINN method is introduced with equations and derivations. The relationship between different constraints like P7 and global conservation is discussed, along with the challenges in combining certain constraints and the need for further improvement.
 
+
+
+---
+
+Contact us: Qingbin Jiang jqb0704@outlook.com  & Prof. Yang Liu yangliu@xjtu.edu.cn 
