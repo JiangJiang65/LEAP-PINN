@@ -1,12 +1,12 @@
 # Introduction
 
-This is the code for the competition "Machine Learning for [Physical Simulation Challenge - powergrid use case](https://www.codabench.org/competitions/2378/).  In order to achieve the goal of the competition, we propose the LEAP-PINN method.  And in the competition, we finished second in it.
+This is the code for the competition "Machine Learning for [Physical Simulation Challenge - powergrid use case](https://www.codabench.org/competitions/2378/).  In order to achieve the goal of the competition, we propose the LEAP-PINN method.  And in the competition, we proposed the LEAP-PINN method and got the second prize.
 
 Here is the LinkedIn post about the result of the competition: [LinkedIn](https://www.linkedin.com/posts/institut-de-recherche-technologique-systemx_machine-learning-for-physical-simulation-activity-7264587187126517760-ZhgC/?utm_source=share&utm_medium=member_desktop)
 
 ![](./img/Result.png)
 
-The overview of the competition is followed.
+The overview of the competition is as followed.
 
 ## Competition overview
 
