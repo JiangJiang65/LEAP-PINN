@@ -2,6 +2,8 @@
 
 You can find all the detail about environment installation in the `1_PowerGrid_UseCase_basics.ipynb`
 
+**\*This git repository does not contain all the data, please refer to `2_Dataset.ipynb` to download the complete data.**
+
 You need to replace the source code for `PowerGridScaler` entire class in line 973 of `main.py` with code for `new scaler.py`
 
 ## How to run
