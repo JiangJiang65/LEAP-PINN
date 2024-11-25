@@ -4,7 +4,7 @@ This is the code for the competition "Machine Learning for [Physical Simulation 
 
 Here is the LinkedIn post about the result of the competition: [LinkedIn](https://www.linkedin.com/posts/institut-de-recherche-technologique-systemx_machine-learning-for-physical-simulation-activity-7264587187126517760-ZhgC/?utm_source=share&utm_medium=member_desktop)
 
-![](./img/result.png)
+![](./img/Result.png)
 
 The overview of the competition is followed.
 
